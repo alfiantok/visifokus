@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sourcing Insights & Strategic Guides | Vision Focus</title>
+  <meta name="description" content="In-depth analysis, expert guides, and market intelligence on China factory sourcing, landed costs, SNI compliance, and cross-border logistics.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .insight-tabs-bar {
+      display: none;
+    }
+    .insight-article-panel {
+      display: none;
+    }
+    .insight-article-panel.active {
+      display: block;
+      animation: fadeIn 0.4s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 50px;
+      align-items: start;
+    }
+    .article-content-card {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      box-shadow: none;
+    }
+    .article-lead {
+      font-size: 1.15rem;
+      line-height: 1.75;
+      color: #334155;
+      font-weight: 500;
+      margin-bottom: 28px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .article-body-text h2,
+    .article-body-text h3 {
+      font-family: var(--font-serif);
+      color: var(--color-primary);
+      margin: 36px 0 14px;
+    }
+    .article-body-text h2 { font-size: 1.6rem; }
+    .article-body-text h3 { font-size: 1.3rem; }
+    .article-body-text p {
+      color: #475569;
+      font-size: 0.98rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .article-body-text ul,
+    .article-body-text ol {
+      margin: 16px 0 24px 20px;
+      color: #475569;
+      font-size: 0.96rem;
+      line-height: 1.75;
+    }
+    .article-body-text li { margin-bottom: 8px; }
+    .pull-quote-box {
+      border-left: 3px solid var(--color-gold);
+      background: transparent;
+      border-radius: 0;
+      padding: 16px 24px;
+      margin: 30px 0;
+      font-family: var(--font-serif);
+      font-size: 1.18rem;
+      font-style: italic;
+      color: var(--color-primary);
+      line-height: 1.65;
+    }
+    .highlights-callout-card {
+      background: #fafaf9;
+      border: none;
+      border-left: 3px solid var(--color-gold);
+      border-radius: 0 8px 8px 0;
+      padding: 22px 26px;
+      margin: 28px 0;
+    }
+    .highlights-callout-card h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .highlights-checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .highlights-checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: #334155;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .highlights-checklist li svg {
+      color: var(--color-gold);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .data-table-wrap {
+      overflow-x: auto;
+      margin: 28px 0;
+      border: 1px solid #f1f5f9;
+      border-radius: 8px;
+    }
+    .article-data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      text-align: left;
+    }
+    .article-data-table th {
+      background: #f8fafc;
+      padding: 12px 16px;
+      color: var(--color-primary);
+      font-weight: 700;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .article-data-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #475569;
+    }
+    .article-data-table tr:last-child td { border-bottom: none; }
+    .article-sidebar-sticky {
+      position: sticky;
+      top: calc(var(--header-height) + 20px);
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .sidebar-widget {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 0 0 24px 0;
+      box-shadow: none;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .sidebar-widget:last-child {
+      border-bottom: none;
+    }
+    .sidebar-widget-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: -0.01em;
+    }
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .toc-list li a {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color var(--transition-fast);
+      padding: 4px 0;
+    }
+    .toc-list li a:hover {
+      color: var(--color-gold);
+    }
+    .article-author-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 24px 0;
+      border-top: 1px solid #f1f5f9;
+      border-bottom: 1px solid #f1f5f9;
+      border-radius: 0;
+      background: transparent;
+      margin-top: 36px;
+    }
+    .article-author-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .article-share-cta-bar {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    @media (max-width: 992px) {
+      .article-layout { grid-template-columns: 1fr; gap: 40px; }
+      .article-content-card { padding: 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ==========================================
+       HEADER & NAVIGATION BAR
+       ========================================== -->
+  <header class="site-header hero-transparent-nav" role="banner">
+    <div class="container-wide">
+      <div class="nav-pill-wrapper">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo-link" aria-label="Vision Focus Home">
+          <img src="assets/logo/VISION FOCUS LOGO FIX SOFT GOLD.png" alt="Vision Focus Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Desktop Navigation Menu (Streamlined like About Us) -->
+        <nav class="desktop-nav" role="navigation" aria-label="Primary Navigation">
+          <!-- 1. HOME -->
+          <a href="index.html" class="nav-link-item" data-i18n="nav_home">HOME</a>
+
+          <!-- 2. ABOUT US -->
+          <div class="has-dropdown">
+            <a href="about.html" class="nav-link-item" data-i18n="nav_about">
+              ABOUT US
+              <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="about.html" class="dropdown-item">
+                <span>About Vision Focus</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="why.html" class="dropdown-item">
+                <span>Why Choose Us</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="how-we-work.html" class="dropdown-item">
+                <span>How We Work</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. SERVICE -->
+          <div class="has-dropdown">
+            <a href="solutions.html" class="nav-link-item" data-i18n="nav_service">
+              SERVICE
+              <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="solutions.html#gate-indonesia" class="dropdown-item">
+                <span>The Gate to Indonesia</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="solutions.html#gate-china" class="dropdown-item">
+                <span>The Gate to China</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. PROJECT REFERENCE -->
+          <a href="projects.html" class="nav-link-item" data-i18n="nav_projects">PROJECT REFERENCE</a>
+
+          <!-- 5. EVENT -->
+          <div class="has-dropdown">
+            <a href="events.html" class="nav-link-item" data-i18n="nav_events">
+              EVENT
+              <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="event-ibt-2025.html" class="dropdown-item">
+                <span>IndoBuildTech 2025</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="event-gzdw.html" class="dropdown-item">
+                <span>Guangzhou Design Week (GZDW 2024)</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="event-detail.html?id=canton" class="dropdown-item">
+                <span>137th Canton Fair &amp; Summit</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="events.html" class="dropdown-item" style="border-top: 1px solid #f1f5f9; margin-top: 4px; padding-top: 8px;">
+                <span style="font-weight: 700; color: var(--color-gold);">All Events &amp; Exhibitions</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. INSIGHTS -->
+          <a href="insights.html" class="nav-link-item" data-i18n="nav_insights">INSIGHTS</a>
+
+          <!-- 7. CONTACT -->
+          <a href="contact.html" class="nav-link-item" data-i18n="nav_contact">CONTACT</a>
+        </nav>
+
+        <!-- Nav Actions: Language Switcher & WhatsApp CTA -->
+        <div class="nav-actions">
+          <!-- Tri-lingual Switcher (Default EN) -->
+          <div class="lang-switcher-pill" aria-label="Language Selector">
+            <button type="button" class="lang-btn active" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="id">ID</button>
+            <button type="button" class="lang-btn" data-lang="zh">中文</button>
+          </div>
+
+          <a href="https://wa.me/628113188878?text=Hello%20Vision%20Focus%2C%20I%20would%20like%20to%20inquire%20about%20sourcing%20services" target="_blank" rel="noopener noreferrer" class="btn-clear-wa" style="padding: 9px 18px; font-size: 0.8rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.204 8.204 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.21 8.21 0 0 1-1.26-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.08s.89 2.41 1.01 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button type="button" class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Open mobile menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <img src="assets/logo/VISION FOCUS LOGO FIX SOFT GOLD.png" alt="Vision Focus Logo" style="height: 36px;">
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="mobile-drawer-body">
+      <div style="display: flex; gap: 8px; margin-bottom: 20px; padding: 0 10px;">
+        <button type="button" class="lang-btn active" data-lang="en" style="border: 1px solid #cbd5e1; flex: 1; padding: 8px;">English</button>
+        <button type="button" class="lang-btn" data-lang="id" style="border: 1px solid #cbd5e1; flex: 1; padding: 8px;">Indonesia</button>
+        <button type="button" class="lang-btn" data-lang="zh" style="border: 1px solid #cbd5e1; flex: 1; padding: 8px;">中文</button>
+      </div>
+
+      <a href="index.html" class="mobile-nav-link" data-i18n="nav_home">Home</a>
+
+      <div>
+        <a href="about.html" class="mobile-nav-link mobile-accordion-trigger" data-i18n="nav_about">About Us <span>▾</span></a>
+        <div class="mobile-accordion-content">
+          <a href="event-ibt-2025.html">IndoBuildTech 2025</a>
+          <a href="event-gzdw.html">Guangzhou Design Week (GZDW 2024)</a>
+          <a href="event-detail.html?id=canton">137th Canton Fair &amp; Summit</a>
+          <a href="events.html">All Events &amp; Exhibitions</a>
+        </div>
+      </div>
+
+      <div>
+        <a href="solutions.html" class="mobile-nav-link mobile-accordion-trigger" data-i18n="nav_service">Service <span>▾</span></a>
+        <div class="mobile-accordion-content">
+          <a href="solutions.html#gate-indonesia">The Gate to Indonesia</a>
+          <a href="solutions.html#gate-china">The Gate to China</a>
+          </div>
+      </div>
+
+      <a href="projects.html" class="mobile-nav-link" data-i18n="nav_projects">Project Reference</a>
+
+      <div>
+        <a href="events.html" class="mobile-nav-link mobile-accordion-trigger" data-i18n="nav_events">Event <span>▾</span></a>
+        <div class="mobile-accordion-content">
+          <a href="events.html#ibt2025">IndoBuildTech 2025</a>
+          <a href="events.html">All Exhibitions & GZDW</a>
+        </div>
+      </div>
+
+      <a href="insights.html" class="mobile-nav-link" data-i18n="nav_insights">Insights</a>
+      <a href="contact.html" class="mobile-nav-link" data-i18n="nav_contact">Contact Us</a>
+      <a href="https://wa.me/628113188878?text=Hello%20Vision%20Focus%2C%20I%20would%20like%20to%20inquire%20about%20sourcing%20services" target="_blank" class="mobile-nav-link" style="color: #25d366; font-weight: 700;">Chat on WhatsApp ↗</a>
+    </div>
+  </aside>
+
+
+
+  <!-- PAGE HERO -->
+  <section class="page-hero-section">
+
+    <div class="container" style="position: relative; z-index: 3;">
+      <div class="page-hero-content fade-in-up" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <span class="page-hero-eyebrow">GUIDE</span>
+        <h1 class="page-hero-title">Sourcing Insights &amp; Strategic Guides</h1>
+
+        <div class="page-breadcrumbs" style="justify-content: center; margin-top: 18px;">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <a href="insights.html">Insights</a>
+          <span class="separator">/</span>
+          <span id="breadcrumbInsightCurrent">China Supply Chain Update 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN ARTICLE CONTENT -->
+  <main style="padding: 60px 0 100px; background: #ffffff;">
+    <div class="container fade-in-up">
+
+      <!-- Back to all Insights navigation link -->
+      <div style="margin-bottom: 28px;">
+        <a href="insights.html" style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; color: #64748b; text-decoration: none; transition: color 0.2s ease;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to all Insights
+        </a>
+      </div>
+
+      <!-- ==============================================================
+           ARTICLE 1: CHINA SUPPLY CHAIN UPDATE 2026
+           ============================================================== -->
+      <div class="insight-article-panel active" id="article-china-supply">
+        <div class="article-layout">
+          <!-- Main Blog Content -->
+          <article class="article-content-card">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
+              <span class="section-tag" style="margin: 0;">MARKET ANALYSIS</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: #64748b;">October 15, 2026</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: #64748b;">6 min read</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: var(--color-gold); font-weight: 600;">By Jason Shi</span>
+            </div>
+
+            <h1 style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--color-primary); line-height: 1.3; margin-bottom: 20px;">
+              China Supply Chain Update 2026: Factory Automation, Green Building Mandates & Lead Times in Guangdong
+            </h1>
+
+            <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 28px;">
+              <img src="assets/images/insights-featured.jpg" alt="Guangdong Industrial Supply Chain" style="width: 100%; height: 420px; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(10, 18, 28, 0.7); backdrop-filter: blur(8px); padding: 10px 16px; color: #e2e8f0; font-size: 0.8rem;">
+                Automated continuous roller kilns inside a Tier-1 sintered stone facility in Nanhai District, Foshan.
+              </div>
+            </div>
+
+            <p class="article-lead">
+              As Guangdong province enforces stricter dual-carbon energy quotas and environmental monitoring across the Pearl River Delta, manufacturing economics for ceramic slabs, stainless steel facades, and commercial fixtures are transforming rapidly. Here is our field analysis on pricing trends, lead times, and risk mitigation strategies for Indonesian developers and procurement directors.
+            </p>
+
+            <div class="highlights-callout-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                Key Market Intelligence for Q3/Q4 2026:
+              </h4>
+              <ul class="highlights-checklist">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Automated Kilns Reduce Waste by 18%:</strong> Italian Sacmi Continua+ lines in Foshan now produce zero-tension sintered slabs with ±0.3mm planar accuracy.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Tier-1 Manufacturer Consolidation:</strong> Smaller polluting workshops have closed; certified mega-plants now guarantee steady capacity and reliable ISO/SNI compliance.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Nansha / Chiwan Port Transit Times:</strong> Direct ocean vessels to Tanjung Priok (Jakarta) and Tanjung Perak (Surabaya) maintain consistent 8 to 11 days sailing times.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Quarterly FOB Pricing Stability:</strong> Locking raw material contracts 60–90 days ahead hedges against natural gas fluctuations during northern winter months.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="article-body-text">
+              <h2>1. The Industrial Shift in Foshan's Ceramic & Metal Hubs</h2>
+              <p>
+                Over the past 24 months, Guangdong's provincial administration has accelerated the transition toward green manufacturing. For Indonesian buyers, this has eliminated many unreliable fly-by-night subcontractors who previously competed solely on price while compromising thickness tolerances and glaze durability.
+              </p>
+              <p>
+                Today, surviving Tier-1 factories operate robotic glaze printing, computerized color spectrophotometers, and zero-discharge closed-loop water filtration. The result is superior batch-to-batch color consistency that Indonesian architects require for luxury hotels, commercial podiums, and expansive retail malls.
+              </p>
+
+              <div class="pull-quote-box">
+                "Direct factory relationships in China are no longer just about shaving 30% off local distributor markups—they are about engineering control, certified testing standards, and guaranteed shipping schedules."
+              </div>
+
+              <h2>2. Ocean Logistics & Lead Time Planning Matrix</h2>
+              <p>
+                To avoid construction delays, project procurement managers must account for production cycling, holiday shutdowns (most notably Chinese New Year and Golden Week), and container consolidation windows:
+              </p>
+
+              <div class="data-table-wrap">
+                <table class="article-data-table">
+                  <thead>
+                    <tr>
+                      <th>Material Category</th>
+                      <th>Production Lead Time</th>
+                      <th>QC & Packing</th>
+                      <th>Transit to Indo Ports</th>
+                      <th>Total Safe Buffer</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Large Porcelain Slabs</strong></td>
+                      <td>20 - 25 Days</td>
+                      <td>4 - 6 Days</td>
+                      <td>9 - 12 Days</td>
+                      <td><strong>45 - 50 Days</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>PVD Stainless Steel Panels</strong></td>
+                      <td>18 - 22 Days</td>
+                      <td>3 - 5 Days</td>
+                      <td>9 - 12 Days</td>
+                      <td><strong>40 - 45 Days</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Supermarket Racking Fixtures</strong></td>
+                      <td>15 - 20 Days</td>
+                      <td>3 - 4 Days</td>
+                      <td>8 - 11 Days</td>
+                      <td><strong>35 - 40 Days</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Commercial Sanitaryware</strong></td>
+                      <td>25 - 30 Days</td>
+                      <td>5 - 7 Days</td>
+                      <td>9 - 12 Days</td>
+                      <td><strong>50 - 55 Days</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h2>3. How Vision Focus Protects Indonesian Clients</h2>
+              <p>
+                Because our headquarters maintains full-time engineering and inspection teams permanently stationed in Foshan, Vision Focus conducts on-site raw material inspections before production, dry-fit mockups before crating, and direct supervised container stuffing. Clients receive detailed high-resolution inspection reports and timestamped video documentation prior to authorising final balance payments.
+              </p>
+            </div>
+
+            <!-- Author Bio Card -->
+            <div class="article-author-card">
+              <div class="article-author-avatar">JS</div>
+              <div>
+                <strong style="color: var(--color-primary); font-size: 1.05rem;">Jason Shi</strong>
+                <p style="font-size: 0.8rem; color: var(--color-gold); font-weight: 600; margin: 2px 0 6px;">Founder & Managing Director, Vision Focus Trade Line</p>
+                <p style="font-size: 0.82rem; color: #64748b; line-height: 1.5; margin: 0;">
+                  With over a decade of cross-border manufacturing leadership in Foshan and Indonesia, Jason has structured direct sourcing operations for more than 40 premier hotel, commercial, and retail developments across Southeast Asia.
+                </p>
+              </div>
+            </div>
+
+            <!-- Share / Consultation CTA -->
+            <div class="article-share-cta-bar">
+              <div>
+                <span style="font-size: 0.82rem; color: #64748b; font-weight: 600;">Need a supply chain review for your project?</span>
+              </div>
+              <div style="display: flex; gap: 10px;">
+                <button type="button" class="btn btn-gold open-quote-modal">Request Project Review →</button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Vision%20Focus%2C%20saya%20ingin%20konsultasi%20analisis%20Supply%20Chain%202026" target="_blank" rel="noopener noreferrer" class="btn-wa-solutions">
+                  WhatsApp Sourcing Desk
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sticky Sidebar -->
+          <aside class="article-sidebar-sticky">
+            <div class="sidebar-widget">
+              <h4 class="sidebar-widget-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                Article Sections
+              </h4>
+              <ul class="toc-list">
+                <li><a href="#article-china-supply">1. Industrial Shift in Foshan</a></li>
+                <li><a href="#article-china-supply">2. Direct Contracts vs Middlemen</a></li>
+                <li><a href="#article-china-supply">3. Lead Time Planning Matrix</a></li>
+                <li><a href="#article-china-supply">4. Quality Protection in Foshan</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget" style="background: linear-gradient(135deg, #111e2e 0%, #1e334c 100%); color: #ffffff; padding: 24px; border-radius: 12px; border-bottom: none;">
+              <span style="color: var(--color-gold); font-size: 0.72rem; font-weight: 700; text-transform: uppercase;">FREE WHITEPAPER</span>
+              <h4 style="color: #ffffff; font-size: 1.1rem; margin: 8px 0 10px;">Ceramics & Stone Price Index 2026</h4>
+              <p style="color: #cbd5e1; font-size: 0.8rem; line-height: 1.5; margin-bottom: 18px;">
+                Download our 18-page quarterly whitepaper with factory pricing benchmarks and ocean freight forecasts.
+              </p>
+              <button type="button" class="btn btn-gold open-quote-modal" style="width: 100%; text-align: center;">Download PDF (Free) →</button>
+            </div>
+
+            <div class="sidebar-widget">
+              <h4 class="sidebar-widget-title">Trending Insights</h4>
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <a href="insight-detail.html?id=how-to-source" style="text-decoration: none; display: block;">
+                  <span style="font-size: 0.7rem; color: var(--color-gold); font-weight: 700;">SOURCING PLAYBOOK</span>
+                  <h6 style="color: var(--color-primary); font-size: 0.88rem; margin: 2px 0;">Direct Factory Sourcing in Foshan: Step-by-Step</h6>
+                </a>
+                <a href="insight-detail.html?id=customs" style="text-decoration: none; display: block;">
+                  <span style="font-size: 0.7rem; color: var(--color-gold); font-weight: 700;">TRADE REGULATIONS</span>
+                  <h6 style="color: var(--color-primary); font-size: 0.88rem; margin: 2px 0;">Navigating Indonesian Customs & SNI Standards</h6>
+                </a>
+                <a href="insight-detail.html?id=landed-cost" style="text-decoration: none; display: block;">
+                  <span style="font-size: 0.7rem; color: var(--color-gold); font-weight: 700;">COST TRANSPARENCY</span>
+                  <h6 style="color: var(--color-primary); font-size: 0.88rem; margin: 2px 0;">The Complete Landed Cost Formula Explained</h6>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- ==============================================================
+           ARTICLE 2: HOW TO DIRECT SOURCE FROM FOSHAN
+           ============================================================== -->
+      <div class="insight-article-panel" id="article-how-to-source">
+        <div class="article-layout">
+          <article class="article-content-card">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
+              <span class="section-tag" style="margin: 0;">SOURCING PLAYBOOK</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: #64748b;">October 10, 2026</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: #64748b;">8 min read</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: var(--color-gold); font-weight: 600;">By Vision Focus Procurement Team</span>
+            </div>
+
+            <h1 style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--color-primary); line-height: 1.3; margin-bottom: 20px;">
+              Direct Factory Sourcing in Foshan: The Practical Step-by-Step Guide for Indonesian Businesses
+            </h1>
+
+            <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 28px;">
+              <img src="assets/images/step-shipping.jpg" alt="Direct Sourcing in China" style="width: 100%; height: 420px; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(10, 18, 28, 0.7); backdrop-filter: blur(8px); padding: 10px 16px; color: #e2e8f0; font-size: 0.8rem;">
+                On-site dimensional and flatness verification before packing at a Guangdong manufacturer.
+              </div>
+            </div>
+
+            <p class="article-lead">
+              Sourcing directly from Chinese manufacturers provides Indonesian developers, contractors, and retail chains with access to superior pricing and bespoke customization. However, without established protocols, companies face counterfeit materials, broken tiles, and contract ambiguities. This playbook outlines the exact 4-phase framework we use to secure flawless procurement.
+            </p>
+
+            <div class="highlights-callout-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                Core Pillars of Safe Direct Sourcing:
+              </h4>
+              <ul class="highlights-checklist">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Manufacturer Verification:</strong> Confirming genuine factory ownership vs trading brokers via on-site kiln audits and business registry checks.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Bilingual Legal Contracts:</strong> Enforceable agreements specifying exact tolerances (ASTM/EN/SNI) and penalty clauses in both English and Mandarin.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Golden Sample Archival:</strong> Retaining dual signed physical reference samples in Foshan and Surabaya to benchmark production batches.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>30/70 Escrow Milestone:</strong> Never releasing final balance until independent pre-shipment quality inspection is certified 100% passed.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="article-body-text">
+              <h2>Phase 1: Due Diligence & Factory Qualification</h2>
+              <p>
+                In Foshan alone, there are tens of thousands of trading firms posing as manufacturers in showrooms and online portals. Working with an intermediary adds an unnecessary 15% to 35% margin markup and distorts communication between your structural engineers and factory machine operators.
+              </p>
+              <p>
+                Vision Focus conducts on-site factory verification checks: reviewing the manufacturer's export license, verifying environmental permits, inspecting continuous kiln production lines, and reviewing past supply records for major international hotel chains.
+              </p>
+
+              <h2>Phase 2: Specification Locking & Counter-Sampling</h2>
+              <p>
+                Never initiate mass production based solely on a digital catalog or PDF render. In our procurement lifecycle:
+              </p>
+              <ol>
+                <li>We request physical sample swatches under controlled D65 daylight lamps.</li>
+                <li>The factory produces two identical "Golden Samples"—one remains sealed at our Foshan QA laboratory, while the other is couriered to the client's architect in Indonesia.</li>
+                <li>Both parties sign physical stickers on the reverse of the sample, documenting acceptable tolerances for gloss level, vein variation, and surface texture.</li>
+              </ol>
+
+              <div class="pull-quote-box">
+                "The golden sample is the supreme court of cross-border procurement. When physical standards are sealed in advance, dispute risks during container unloading are practically zero."
+              </div>
+
+              <h2>Phase 3: Milestone-Based Payment Structuring</h2>
+              <p>
+                Traditional wire transfers offer zero leverage if quality fails upon container arrival in Jakarta. We structure production contracts around strict milestone gates:
+              </p>
+              <ul>
+                <li><strong>30% Deposit:</strong> To purchase raw materials and initiate production tooling.</li>
+                <li><strong>In-Line Inspection Gate:</strong> Photographic and video validation during slab pressing and kiln firing.</li>
+                <li><strong>Pre-Shipment Inspection (PSI):</strong> Full testing of dimensions, scratch hardness, packaging crate moisture, and fumigation stamps.</li>
+                <li><strong>70% Balance Release:</strong> Only after the client approves the final comprehensive QA inspection report and bill of lading draft.</li>
+              </ul>
+            </div>
+
+            <div class="article-author-card">
+              <div class="article-author-avatar">VF</div>
+              <div>
+                <strong style="color: var(--color-primary); font-size: 1.05rem;">Vision Focus Sourcing Advisory Desk</strong>
+                <p style="font-size: 0.8rem; color: var(--color-gold); font-weight: 600; margin: 2px 0 6px;">Bilingual Procurement & Quality Engineers</p>
+                <p style="font-size: 0.82rem; color: #64748b; line-height: 1.5; margin: 0;">
+                  Operating directly from Foshan and Surabaya, our engineers manage factory audits, supplier contracts, and pre-shipment quality protocols for leading Indonesian projects.
+                </p>
+              </div>
+            </div>
+
+            <div class="article-share-cta-bar">
+              <div>
+                <span style="font-size: 0.82rem; color: #64748b; font-weight: 600;">Have a vendor in China you need verified?</span>
+              </div>
+              <div style="display: flex; gap: 10px;">
+                <button type="button" class="btn btn-gold open-quote-modal">Request Factory Audit →</button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Vision%20Focus%2C%20saya%20butuh%20bantuan%20audit%20pabrik%20di%20China" target="_blank" rel="noopener noreferrer" class="btn-wa-solutions">
+                  Audit Consultation
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sidebar -->
+          <aside class="article-sidebar-sticky">
+            <div class="sidebar-widget">
+              <h4 class="sidebar-widget-title">Table of Contents</h4>
+              <ul class="toc-list">
+                <li><a href="#article-how-to-source">Phase 1: Due Diligence</a></li>
+                <li><a href="#article-how-to-source">Phase 2: Golden Samples</a></li>
+                <li><a href="#article-how-to-source">Phase 3: Milestone Payments</a></li>
+                <li><a href="#article-how-to-source">Phase 4: Pre-Shipment QC</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget">
+              <span class="section-tag" style="margin-bottom: 8px;">SOURCING PLAYBOOK</span>
+              <h5 style="color: var(--color-primary); font-size: 1rem; margin-bottom: 8px;">Direct Factory BOQ Review</h5>
+              <p style="font-size: 0.82rem; color: #64748b; line-height: 1.5; margin-bottom: 16px;">
+                Send us your bill of quantities or architectural drawings. We provide an itemized factory price comparison within 48 hours.
+              </p>
+              <button type="button" class="btn btn-gold open-quote-modal" style="width: 100%;">Submit BOQ for Review →</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- ==============================================================
+           ARTICLE 3: CUSTOMS & SNI REGULATIONS
+           ============================================================== -->
+      <div class="insight-article-panel" id="article-customs">
+        <div class="article-layout">
+          <article class="article-content-card">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
+              <span class="section-tag" style="margin: 0;">TRADE REGULATIONS</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: #64748b;">October 5, 2026</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: #64748b;">7 min read</span>
+            </div>
+
+            <h1 style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--color-primary); line-height: 1.3; margin-bottom: 20px;">
+              Navigating Indonesian Customs, SNI Certifications & Port Clearance Procedures
+            </h1>
+
+            <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 28px;">
+              <img src="assets/images/logistics.jpg" alt="Port Clearance and Customs" style="width: 100%; height: 420px; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(10, 18, 28, 0.7); backdrop-filter: blur(8px); padding: 10px 16px; color: #e2e8f0; font-size: 0.8rem;">
+                Container vessel discharging cargo at Tanjung Priok Port, Jakarta.
+              </div>
+            </div>
+
+            <p class="article-lead">
+              Importing building materials into Indonesia without exact regulatory compliance can lead to costly red-line customs physical inspections, container demurrage penalties, or cargo rejection. Here is how Vision Focus ensures 100% legal, zero-demurrage clearance through SNI compliance and ACFTA Form E tariff optimization.
+            </p>
+
+            <div class="highlights-callout-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                Key Regulatory Checkpoints for Importers:
+              </h4>
+              <ul class="highlights-checklist">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Mandatory SNI Testing:</strong> Required for ceramic tiles (SNI ISO 13006), sanitary ceramics (SNI 03-0797), and architectural structural steel.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Form E Tariff Elimination:</strong> Utilizing ASEAN-China Free Trade Agreement (ACFTA) certificates to reduce import tariffs from 5–15% down to 0%.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Pre-Arrival Electronic Manifest:</strong> Submitting BC 1.1 documentation prior to vessel berthing to secure immediate green-line customs release.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>ISPM 15 Wood Fumigation:</strong> Mandatory IPPC heat treatment stamp on all wooden packing crates to prevent quarantine holds.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="article-body-text">
+              <h2>1. Understanding Mandatory SNI Requirements</h2>
+              <p>
+                The Indonesian Ministry of Industry enforces mandatory SNI (Standar Nasional Indonesia) on specific building material categories to protect public safety and domestic standards. Importing uncertified materials exposes buyers to confiscation and hefty administrative fines.
+              </p>
+              <p>
+                Vision Focus only partners with Chinese factories that already possess valid SPPT-SNI certificates or facilitates comprehensive factory audit testing with accredited certification bodies (LSPro) prior to commercial shipment.
+              </p>
+
+              <h2>2. Slashing Import Duties with ACFTA Form E</h2>
+              <p>
+                Under the ASEAN-China Free Trade Agreement, qualifying building materials manufactured in China can enter Indonesia at <strong>0% preferential import duty</strong>, provided a valid Form E Certificate of Origin is issued by China Customs (GACC):
+              </p>
+
+              <div class="data-table-wrap">
+                <table class="article-data-table">
+                  <thead>
+                    <tr>
+                      <th>Material Item</th>
+                      <th>Standard MFN Duty</th>
+                      <th>With Form E (ACFTA)</th>
+                      <th>Duty Savings</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Porcelain & Ceramic Slabs</td>
+                      <td>10% - 15%</td>
+                      <td><strong>0%</strong></td>
+                      <td>Save 10% - 15%</td>
+                    </tr>
+                    <tr>
+                      <td>PVD Stainless Steel Sheets</td>
+                      <td>5% - 7.5%</td>
+                      <td><strong>0%</strong></td>
+                      <td>Save 5% - 7.5%</td>
+                    </tr>
+                    <tr>
+                      <td>Commercial Sanitaryware</td>
+                      <td>10%</td>
+                      <td><strong>0%</strong></td>
+                      <td>Save 10%</td>
+                    </tr>
+                    <tr>
+                      <td>Display Shelving & Fixtures</td>
+                      <td>10%</td>
+                      <td><strong>0%</strong></td>
+                      <td>Save 10%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h2>3. Port Handling & Avoiding Demurrage Fees</h2>
+              <p>
+                At container terminals such as Tanjung Priok (Jakarta) or Tanjung Perak (Surabaya), shipping lines permit 5 to 7 days of free container storage. Any paperwork discrepancies or delayed import duty payments trigger demurrage charges ranging from $80 to $180 per container per day.
+              </p>
+              <p>
+                By pre-clearing drafts of commercial invoices, packing lists, bills of lading, and Form E before the vessel departs China, our customs brokerage team ensures goods are released within 24 to 48 hours of berthing.
+              </p>
+            </div>
+
+            <div class="article-share-cta-bar">
+              <div>
+                <span style="font-size: 0.82rem; color: #64748b; font-weight: 600;">Need assistance with SNI verification or customs documentation?</span>
+              </div>
+              <div style="display: flex; gap: 10px;">
+                <button type="button" class="btn btn-gold open-quote-modal">Consult Customs Desk →</button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Vision%20Focus%2C%20saya%20butuh%20info%20SNI%20dan%20Customs%20Clearance" target="_blank" rel="noopener noreferrer" class="btn-wa-solutions">
+                  WhatsApp Support
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <aside class="article-sidebar-sticky">
+            <div class="sidebar-widget">
+              <h4 class="sidebar-widget-title">Customs Checklist</h4>
+              <ul class="toc-list">
+                <li><a href="#article-customs">1. Mandatory SNI Products</a></li>
+                <li><a href="#article-customs">2. ACFTA Form E Benefits</a></li>
+                <li><a href="#article-customs">3. Port Demurrage Prevention</a></li>
+                <li><a href="#article-customs">4. Green Line Clearance</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget" style="background: var(--color-surface-soft);">
+              <span style="color: var(--color-gold); font-size: 0.72rem; font-weight: 700;">REGULATORY GUIDE</span>
+              <h5 style="color: var(--color-primary); font-size: 1rem; margin: 6px 0 10px;">The Indonesia SNI Handbook</h5>
+              <p style="font-size: 0.82rem; color: #64748b; line-height: 1.5; margin-bottom: 16px;">
+                Download our 24-page guide detailing HS codes, mandatory test standards, and customs clearance procedures.
+              </p>
+              <button type="button" class="btn btn-outline-gold open-quote-modal" style="width: 100%;">Download Handbook →</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- ==============================================================
+           ARTICLE 4: LANDED COST FORMULA
+           ============================================================== -->
+      <div class="insight-article-panel" id="article-landed-cost">
+        <div class="article-layout">
+          <article class="article-content-card">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
+              <span class="section-tag" style="margin: 0;">FINANCIAL STRATEGY</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: #64748b;">September 28, 2026</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: #64748b;">5 min read</span>
+            </div>
+
+            <h1 style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--color-primary); line-height: 1.3; margin-bottom: 20px;">
+              The Complete Landed Cost Formula: How to Calculate Ex-Factory to Job Site Costs Without Surprises
+            </h1>
+
+            <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 28px;">
+              <img src="assets/images/step-quote.jpg" alt="Cost Transparency and Sourcing" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+
+            <p class="article-lead">
+              A common trap for new importers is comparing Chinese factory quotes (FOB) directly against local Indonesian distributor prices without calculating the true landed cost. Understanding the 6 cost layers ensures complete financial transparency and predictable project ROI.
+            </p>
+
+            <div class="article-body-text">
+              <h2>The 6 Pillars of Cross-Border Landed Cost</h2>
+              <p>
+                Landed cost is the total net expense of moving goods from factory floor in Guangdong to your construction job site in Indonesia:
+              </p>
+              <div class="pull-quote-box">
+                Landed Cost = Ex-Factory FOB + Sea Freight + Marine Cargo Insurance + Port Clearance & Terminal Fees + Import Duties & PPh/PPN + Inland Flatbed Trucking
+              </div>
+
+              <h2>Real Project Case Study: 180-Key Luxury Resort in Bali</h2>
+              <p>
+                In a recent hospitality development in Nusa Dua, Bali, the developer required 28,000 sqm of large format porcelain slabs and 360 sets of custom PVD champagne sanitary suites:
+              </p>
+              <ul>
+                <li><strong>Local Indonesian Middleman Quote:</strong> Rp 14.8 Billion (with a 90-day lead time and limited finish selections).</li>
+                <li><strong>Vision Focus Direct Landed Cost:</strong> Rp 9.4 Billion (including all ocean freight, Form E zero duty, customs brokerage, and site trucking).</li>
+                <li><strong>Net Developer Savings:</strong> <strong>Rp 5.4 Billion (36.5% Net Reduction)</strong> alongside fully customized bookmatched slab veining.</li>
+              </ul>
+            </div>
+
+            <div class="article-share-cta-bar">
+              <div>
+                <span style="font-size: 0.82rem; color: #64748b; font-weight: 600;">Want an itemized landed cost calculation for your BOQ?</span>
+              </div>
+              <div style="display: flex; gap: 10px;">
+                <button type="button" class="btn btn-gold open-quote-modal">Request Landed Cost Sheet →</button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Vision%20Focus%2C%20saya%20ingin%20hitung%20Landed%20Cost%20proyek" target="_blank" rel="noopener noreferrer" class="btn-wa-solutions">
+                  WhatsApp Calculator
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <aside class="article-sidebar-sticky">
+            <div class="sidebar-widget">
+              <h4 class="sidebar-widget-title">Cost Elements</h4>
+              <ul class="toc-list">
+                <li><a href="#article-landed-cost">1. The 6 Cost Pillars</a></li>
+                <li><a href="#article-landed-cost">2. Bali Luxury Resort Case</a></li>
+                <li><a href="#article-landed-cost">3. Eliminating Middleman Fees</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget">
+              <span class="section-tag">CALCULATOR</span>
+              <h5 style="color: var(--color-primary); font-size: 1rem; margin: 8px 0 10px;">Landed Cost Breakdown</h5>
+              <p style="font-size: 0.82rem; color: #64748b; line-height: 1.5; margin-bottom: 16px;">
+                Get a transparent breakdown with zero hidden fees before committing to procurement.
+              </p>
+              <button type="button" class="btn btn-gold open-quote-modal" style="width: 100%;">Get Landed Cost Quote →</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- ==============================================================
+           ARTICLE 5: RETAIL PLAYBOOK
+           ============================================================== -->
+      <div class="insight-article-panel" id="article-retail-playbook">
+        <div class="article-layout">
+          <article class="article-content-card">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
+              <span class="section-tag" style="margin: 0;">RETAIL SOURCING</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: #64748b;">September 20, 2026</span>
+              <span style="font-size: 0.82rem; color: #94a3b8;">&bull;</span>
+              <span style="font-size: 0.82rem; color: #64748b;">6 min read</span>
+            </div>
+
+            <h1 style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--color-primary); line-height: 1.3; margin-bottom: 20px;">
+              Retail Chain Sourcing Playbook: Standardizing Store Fixtures & Display Racking from China
+            </h1>
+
+            <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 28px;">
+              <img src="assets/images/step-needs.jpg" alt="Retail Chain Sourcing" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+
+            <p class="article-lead">
+              For rapid supermarket, minimarket, and lifestyle retail chain rollouts across Indonesia, securing uniform visual identity, modular flexibility, and predictable fixture costs is critical. Here is how our centralized China sourcing program accelerates store opening schedules.
+            </p>
+
+            <div class="article-body-text">
+              <h2>1. Modular Shelving Standardization</h2>
+              <p>
+                By engineering standardized powder-coated steel gondolas and uprights produced by specialized robotic stamping facilities in Guangdong, retail chains achieve 100% component interchangeability across flagship hypermarkets and suburban convenience branches.
+              </p>
+
+              <h2>2. Foshan Warehouse Multi-Vendor Consolidation</h2>
+              <p>
+                Rather than coordinating separate shipments from display shelving factories, lighting makers, and refrigeration suppliers, Vision Focus consolidates all items at our dedicated Foshan logistics hub. Containers are stuffed according to each new store opening sequence—allowing immediate store fitout upon container arrival.
+              </p>
+            </div>
+
+            <div class="article-share-cta-bar">
+              <div>
+                <span style="font-size: 0.82rem; color: #64748b; font-weight: 600;">Planning a multi-store nationwide expansion?</span>
+              </div>
+              <div style="display: flex; gap: 10px;">
+                <button type="button" class="btn btn-gold open-quote-modal">Consult Retail Sourcing →</button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Vision%20Focus%2C%20saya%20ingin%20tanya%20Retail%20Fixtures%20Sourcing" target="_blank" rel="noopener noreferrer" class="btn-wa-solutions">
+                  WhatsApp Retail Desk
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <aside class="article-sidebar-sticky">
+            <div class="sidebar-widget">
+              <h4 class="sidebar-widget-title">Retail Playbook</h4>
+              <ul class="toc-list">
+                <li><a href="#article-retail-playbook">1. Modular Gondola Shelving</a></li>
+                <li><a href="#article-retail-playbook">2. Hub Consolidation</a></li>
+                <li><a href="#article-retail-playbook">3. Nationwide Rollout Buffer</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget" style="background: var(--color-surface-soft);">
+              <span style="color: var(--color-gold); font-size: 0.72rem; font-weight: 700;">PLAYBOOK PDF</span>
+              <h5 style="color: var(--color-primary); font-size: 1rem; margin: 6px 0 10px;">Retail Fitout Playbook</h5>
+              <p style="font-size: 0.82rem; color: #64748b; line-height: 1.5; margin-bottom: 16px;">
+                Download specifications, load testing ratings, and store opening schedule templates.
+              </p>
+              <button type="button" class="btn btn-outline-gold open-quote-modal" style="width: 100%;">Download Playbook →</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const requestedId = urlParams.get('id') || 'china-supply';
+
+      const panels = document.querySelectorAll('.insight-article-panel');
+      const breadcrumb = document.getElementById('breadcrumbInsightCurrent');
+
+      const titleMap = {
+        'china-supply': 'China Supply Chain Update 2026: Trends & Mandates',
+        'how-to-source': 'Direct Factory Sourcing in Foshan: The Practical Guide',
+        'customs': 'Navigating Indonesian Customs & SNI Certifications',
+        'landed-cost': 'The Complete Landed Cost Breakdown for Indonesian Importers',
+        'retail-playbook': 'Retail Chain Fitout Sourcing Playbook'
+      };
+
+      function showArticle(id) {
+        let matched = false;
+        panels.forEach(p => {
+          const isTarget = p.id === 'article-' + id;
+          p.classList.toggle('active', isTarget);
+          if (isTarget) matched = true;
+        });
+
+        if (!matched && panels.length > 0) {
+          panels[0].classList.add('active');
+        }
+
+        if (breadcrumb) {
+          breadcrumb.textContent = titleMap[id] || 'Sourcing Insight Details';
+        }
+      }
+
+      showArticle(requestedId);
+    });
+  </script>
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="clear-footer" role="contentinfo">
+    <div class="container">
+      <div class="clear-footer-grid">
+        <!-- 1. Brand & Info -->
+        <div>
+          <img src="assets/logo/VISION FOCUS LOGO FIX SOFT GOLD.png" alt="Vision Focus Logo" style="height: 38px; margin-bottom: 12px;">
+          <div style="font-weight: 700; color: #ffffff; font-size: 0.95rem; margin-bottom: 16px;" data-i18n="footer_company">
+            PT VISI FOKUS SINDOTAMA PERKASA
+          </div>
+          <img src="assets/logo/LOGO GDW white.png" alt="Guangzhou Design Week Strategic Partner" style="max-height: 48px; opacity: 0.9;">
+        </div>
+
+        <!-- 2. China Partner Office -->
+        <div>
+          <div class="footer-col-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c89b53" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="footer_china">China Partner</span>
+          </div>
+          <div class="footer-addr-text">
+            Room 707, Building 2, Xingfa Building,<br>
+            Jihua Western Road, Chancheng District,<br>
+            Foshan Guangdong, China
+          </div>
+        </div>
+
+        <!-- 3. Surabaya Office -->
+        <div>
+          <div class="footer-col-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c89b53" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="footer_surabaya">Surabaya Office</span>
+          </div>
+          <div class="footer-addr-text">
+            Pakuwon Tower Tunjungan Plaza 6, Lt. 23,<br>
+            Unit 02-03, Superblock, Tunjungan City,<br>
+            Surabaya
+          </div>
+        </div>
+
+        <!-- 4. Jakarta Office -->
+        <div>
+          <div class="footer-col-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c89b53" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="footer_jakarta">Jakarta Office</span>
+          </div>
+          <div class="footer-addr-text">
+            Bizloft U. 1919, U Residence<br>
+            Boulevard Diponegoro, Lippo Karawaci<br>
+            Tangerang
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Row: Contacts & Copyright -->
+      <div class="clear-footer-bottom">
+        <div class="footer-contact-links">
+          <a href="mailto:cs@visifokus.com" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c89b53" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>cs@visifokus.com</span>
+          </a>
+          <a href="https://instagram.com/jason.shiweifei" target="_blank" rel="noopener noreferrer" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c89b53" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span>@jason.shiweifei</span>
+          </a>
+          <a href="https://wa.me/628113188878" target="_blank" rel="noopener noreferrer" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" color="#25d366"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.204 8.204 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.21 8.21 0 0 1-1.26-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.08s.89 2.41 1.01 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg>
+            <span>+62 811-3188-878</span>
+          </a>
+        </div>
+        <div>
+          &copy; 2016 - 2026 PT VISI FOKUS SINDOTAMA PERKASA. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/628113188878?text=Hello%20Vision%20Focus%2C%20I%20would%20like%20to%20inquire%20about%20sourcing%20services" target="_blank" rel="noopener noreferrer" class="whatsapp-float" style="position: fixed; bottom: 25px; right: 25px; z-index: 999; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(37,211,102,0.4); transition: transform 0.3s ease;" aria-label="Chat on WhatsApp">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="#ffffff"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.204 8.204 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.21 8.21 0 0 1-1.26-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.08s.89 2.41 1.01 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg>
+  </a>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+

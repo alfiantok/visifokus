@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Material Specification & Technical Catalog | Vision Focus</title>
+  <meta name="description" content="Detailed engineering specifications, dimensions, finishes, and direct factory procurement terms for porcelain slabs, architectural stainless steel, and commercial fixtures.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .material-tabs-bar {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 12px 0 24px;
+      scrollbar-width: none;
+    }
+    .material-tabs-bar::-webkit-scrollbar { display: none; }
+    .material-tab-btn {
+      padding: 10px 20px;
+      border-radius: 50px;
+      border: 1px solid var(--color-border);
+      background: #ffffff;
+      color: var(--color-primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .material-tab-btn:hover,
+    .material-tab-btn.active {
+      background: var(--color-primary);
+      color: #ffffff;
+      border-color: var(--color-primary);
+      box-shadow: 0 4px 14px rgba(17, 30, 46, 0.15);
+    }
+    .material-tab-btn.active .tab-badge {
+      background: var(--color-gold);
+      color: #ffffff;
+    }
+    .material-detail-panel {
+      display: none;
+    }
+    .material-detail-panel.active {
+      display: block;
+      animation: fadeIn 0.4s ease;
+    }
+    .spec-table-grid {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+    }
+    .spec-table-grid td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.86rem;
+    }
+    .spec-table-grid tr:last-child td { border-bottom: none; }
+    .spec-table-grid td:first-child {
+      font-weight: 700;
+      color: var(--color-primary);
+      width: 38%;
+      background: rgba(0, 0, 0, 0.015);
+    }
+    .spec-table-grid td:last-child {
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+  <!-- ==========================================
+       HEADER & NAVIGATION BAR
+       ========================================== -->
+  <header class="site-header hero-transparent-nav" role="banner">
+    <div class="container-wide">
+      <div class="nav-pill-wrapper">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo-link" aria-label="Vision Focus Home">
+          <img src="assets/logo/VISION FOCUS LOGO FIX SOFT GOLD.png" alt="Vision Focus Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Desktop Navigation Menu (Streamlined like About Us) -->
+        <nav class="desktop-nav" role="navigation" aria-label="Primary Navigation">
+          <!-- 1. HOME -->
+          <a href="index.html" class="nav-link-item" data-i18n="nav_home">HOME</a>
+
+          <!-- 2. ABOUT US -->
+          <div class="has-dropdown">
+            <a href="about.html" class="nav-link-item" data-i18n="nav_about">
+              ABOUT US
+              <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="about.html" class="dropdown-item">
+                <span>About Vision Focus</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="why.html" class="dropdown-item">
+                <span>Why Choose Us</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="how-we-work.html" class="dropdown-item">
+                <span>How We Work</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. SERVICE -->
+          <div class="has-dropdown">
+            <a href="solutions.html" class="nav-link-item" data-i18n="nav_service">
+              SERVICE
+              <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="solutions.html#gate-indonesia" class="dropdown-item">
+                <span>The Gate to Indonesia</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="solutions.html#gate-china" class="dropdown-item">
+                <span>The Gate to China</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. PROJECT REFERENCE -->
+          <a href="projects.html" class="nav-link-item active" data-i18n="nav_projects">PROJECT REFERENCE</a>
+
+          <!-- 5. EVENT -->
+          <div class="has-dropdown">
+            <a href="events.html" class="nav-link-item" data-i18n="nav_events">
+              EVENT
+              <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="event-ibt-2025.html" class="dropdown-item">
+                <span>IndoBuildTech 2025</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="event-gzdw.html" class="dropdown-item">
+                <span>Guangzhou Design Week (GZDW 2024)</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="event-detail.html?id=canton" class="dropdown-item">
+                <span>137th Canton Fair &amp; Summit</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="events.html" class="dropdown-item" style="border-top: 1px solid #f1f5f9; margin-top: 4px; padding-top: 8px;">
+                <span style="font-weight: 700; color: var(--color-gold);">All Events &amp; Exhibitions</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. INSIGHTS -->
+          <a href="insights.html" class="nav-link-item" data-i18n="nav_insights">INSIGHTS</a>
+
+          <!-- 7. CONTACT -->
+          <a href="contact.html" class="nav-link-item" data-i18n="nav_contact">CONTACT</a>
+        </nav>
+
+        <!-- Nav Actions: Language Switcher & WhatsApp CTA -->
+        <div class="nav-actions">
+          <!-- Tri-lingual Switcher (Default EN) -->
+          <div class="lang-switcher-pill" aria-label="Language Selector">
+            <button type="button" class="lang-btn active" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="id">ID</button>
+            <button type="button" class="lang-btn" data-lang="zh">中文</button>
+          </div>
+
+          <a href="https://wa.me/628113188878?text=Hello%20Vision%20Focus%2C%20I%20would%20like%20to%20inquire%20about%20sourcing%20services" target="_blank" rel="noopener noreferrer" class="btn-clear-wa" style="padding: 9px 18px; font-size: 0.8rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.204 8.204 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.21 8.21 0 0 1-1.26-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.08s.89 2.41 1.01 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button type="button" class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Open mobile menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <img src="assets/logo/VISION FOCUS LOGO FIX SOFT GOLD.png" alt="Vision Focus Logo" style="height: 36px;">
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="mobile-drawer-body">
+      <div style="display: flex; gap: 8px; margin-bottom: 20px; padding: 0 10px;">
+        <button type="button" class="lang-btn active" data-lang="en" style="border: 1px solid #cbd5e1; flex: 1; padding: 8px;">English</button>
+        <button type="button" class="lang-btn" data-lang="id" style="border: 1px solid #cbd5e1; flex: 1; padding: 8px;">Indonesia</button>
+        <button type="button" class="lang-btn" data-lang="zh" style="border: 1px solid #cbd5e1; flex: 1; padding: 8px;">中文</button>
+      </div>
+
+      <a href="index.html" class="mobile-nav-link" data-i18n="nav_home">Home</a>
+
+      <div>
+        <a href="about.html" class="mobile-nav-link mobile-accordion-trigger" data-i18n="nav_about">About Us <span>▾</span></a>
+        <div class="mobile-accordion-content">
+          <a href="event-ibt-2025.html">IndoBuildTech 2025</a>
+          <a href="event-gzdw.html">Guangzhou Design Week (GZDW 2024)</a>
+          <a href="event-detail.html?id=canton">137th Canton Fair &amp; Summit</a>
+          <a href="events.html">All Events &amp; Exhibitions</a>
+        </div>
+      </div>
+
+      <div>
+        <a href="solutions.html" class="mobile-nav-link mobile-accordion-trigger" data-i18n="nav_service">Service <span>▾</span></a>
+        <div class="mobile-accordion-content">
+          <a href="solutions.html#gate-indonesia">The Gate to Indonesia</a>
+          <a href="solutions.html#gate-china">The Gate to China</a>
+          </div>
+      </div>
+
+      <a href="projects.html" class="mobile-nav-link" data-i18n="nav_projects">Project Reference</a>
+
+      <div>
+        <a href="events.html" class="mobile-nav-link mobile-accordion-trigger" data-i18n="nav_events">Event <span>▾</span></a>
+        <div class="mobile-accordion-content">
+          <a href="events.html#ibt2025">IndoBuildTech 2025</a>
+          <a href="events.html">All Exhibitions & GZDW</a>
+        </div>
+      </div>
+
+      <a href="insights.html" class="mobile-nav-link" data-i18n="nav_insights">Insights</a>
+      <a href="contact.html" class="mobile-nav-link" data-i18n="nav_contact">Contact Us</a>
+      <a href="https://wa.me/628113188878?text=Hello%20Vision%20Focus%2C%20I%20would%20like%20to%20inquire%20about%20sourcing%20services" target="_blank" class="mobile-nav-link" style="color: #25d366; font-weight: 700;">Chat on WhatsApp ↗</a>
+    </div>
+  </aside>
+
+
+
+  <!-- PAGE HERO -->
+  <section class="page-hero-section">
+
+    <div class="container" style="position: relative; z-index: 3;">
+      <div class="page-hero-content fade-in-up" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <span class="page-hero-eyebrow">MATERIALS</span>
+        <h1 class="page-hero-title">Technical Material Library</h1>
+
+        <div class="page-breadcrumbs" style="justify-content: center; margin-top: 18px;">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <a href="projects.html">Project Reference</a>
+          <span class="separator">/</span>
+          <span id="breadcrumbMaterialCurrent">Porcelain &amp; Granite Slabs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN DETAIL CONTENT -->
+  <main style="padding: 90px 0 110px; background: #fafbfc;">
+    <div class="container fade-in-up">
+
+      <!-- Interactive Material Selector Tabs -->
+      <div class="material-tabs-bar" role="tablist" aria-label="Select Material Category">
+        <button type="button" class="material-tab-btn active" data-target="porcelain">
+          <span>Porcelain & Granite Slabs</span>
+          <span class="tab-badge">Large Format</span>
+        </button>
+        <button type="button" class="material-tab-btn" data-target="stainless">
+          <span>Architectural Stainless Steel</span>
+          <span class="tab-badge">PVD Titanium</span>
+        </button>
+        <button type="button" class="material-tab-btn" data-target="sanitary">
+          <span>Commercial Sanitaryware</span>
+          <span class="tab-badge">WaterMark / SNI</span>
+        </button>
+        <button type="button" class="material-tab-btn" data-target="racking">
+          <span>Modular Display Racking</span>
+          <span class="tab-badge">Retail Systems</span>
+        </button>
+      </div>
+
+      <!-- ==============================================================
+           PANEL 1: PORCELAIN & GRANITE SLABS
+           ============================================================== -->
+      <div class="material-detail-panel active" id="mat-panel-porcelain">
+        <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 36px; margin-bottom: 50px;">
+          <!-- Left: Images -->
+          <div>
+            <div style="position: relative; overflow: hidden; border-radius: 14px; box-shadow: var(--shadow-sm);">
+              <img id="matImg-porcelain" src="assets/images/prod-granite.jpg" alt="Porcelain & Granite Slabs" class="gallery-main-img">
+              <span class="project-card-tag" style="top: 18px; left: 18px;">Direct Foshan Sintered Stone</span>
+            </div>
+            <div class="gallery-thumbs">
+              <div class="gallery-thumb-item active" onclick="switchMatImage('porcelain', 'assets/images/prod-granite.jpg', this)">
+                <img src="assets/images/prod-granite.jpg" alt="Calacatta Porcelain Slab">
+              </div>
+              <div class="gallery-thumb-item" onclick="switchMatImage('porcelain', 'assets/images/project-residential.jpg', this)">
+                <img src="assets/images/project-residential.jpg" alt="Installed Villa Living Room">
+              </div>
+              <div class="gallery-thumb-item" onclick="switchMatImage('porcelain', 'assets/images/project-hospitality.jpg', this)">
+                <img src="assets/images/project-hospitality.jpg" alt="Honed Bathroom Application">
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Overview & CTA -->
+          <div class="detail-meta-card">
+            <span class="section-tag">PORCELAIN & SINTERED STONE</span>
+            <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--color-primary); margin: 6px 0 16px;">
+              Large Format Porcelain & Granite Slabs
+            </h2>
+            <p style="color: #64748b; font-size: 0.92rem; line-height: 1.6; margin-bottom: 24px;">
+              Engineered with advanced 36,000-ton Italian SACMI press technology and high-definition digital inkjet printing. Completely non-porous, UV-stable, and resistant to stains, extreme heat, and scratching.
+            </p>
+
+            <div class="meta-stat-grid">
+              <div class="meta-stat-item">
+                <h6>Absorption</h6>
+                <p>&lt; 0.05% (Impervious)</p>
+              </div>
+              <div class="meta-stat-item">
+                <h6>Hardness</h6>
+                <p>Mohs 7 (Scratch Proof)</p>
+              </div>
+              <div class="meta-stat-item">
+                <h6>Slip Rating</h6>
+                <p>R10 - R11 Honed</p>
+              </div>
+              <div class="meta-stat-item">
+                <h6>MOQ</h6>
+                <p style="color: var(--color-gold);">1 x 20ft Container (~680m²)</p>
+              </div>
+            </div>
+
+            <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-primary); margin-bottom: 8px;">Standard Dimensions & Thickness</h4>
+            <table class="spec-table-grid">
+              <tbody>
+                <tr><td>Available Sizes</td><td>750x1500mm, 800x2600mm, 1200x2700mm bookmatched</td></tr>
+                <tr><td>Thickness Options</td><td>6mm (Wall Cladding), 9mm (Floor), 12mm (Countertops)</td></tr>
+                <tr><td>Surface Finishes</td><td>Mirror Polished, Soft-Matte Honed, Leathered, Micro-Carved</td></tr>
+                <tr><td>Packaging</td><td>Fumigated steel A-frames + reinforced wooden crating</td></tr>
+                <tr><td>Certifications</td><td>CE, ISO 9001, SNI ISO 13006:2018</td></tr>
+              </tbody>
+            </table>
+
+            <div style="display: flex; gap: 14px; margin-top: 26px;">
+              <button type="button" class="btn btn-gold open-quote-modal" style="flex: 1;">Request Sample Box →</button>
+              <a href="https://wa.me/6281234567890?text=Halo%20Vision%20Focus%2C%20saya%20ingin%20sample%20box%20Porcelain%20Slabs" target="_blank" rel="noopener noreferrer" class="btn-wa-solutions" style="padding: 12px 18px;">
+                Chat WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==============================================================
+           PANEL 2: ARCHITECTURAL STAINLESS STEEL
+           ============================================================== -->
+      <div class="material-detail-panel" id="mat-panel-stainless">
+        <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 36px; margin-bottom: 50px;">
+          <div>
+            <div style="position: relative; overflow: hidden; border-radius: 14px; box-shadow: var(--shadow-sm);">
+              <img id="matImg-stainless" src="assets/images/prod-stainless.jpg" alt="Architectural Stainless Steel" class="gallery-main-img">
+              <span class="project-card-tag" style="top: 18px; left: 18px;">PVD Titanium Vacuum Coating</span>
+            </div>
+          </div>
+
+          <div class="detail-meta-card">
+            <span class="section-tag">DECORATIVE METALS</span>
+            <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--color-primary); margin: 6px 0 16px;">
+              Architectural Stainless Steel Panels
+            </h2>
+            <p style="color: #64748b; font-size: 0.92rem; line-height: 1.6; margin-bottom: 24px;">
+              Specialized water ripple, mirror finish, hairline brushed, and custom embossed textures for luxury ceiling installations, column claddings, and elevator entrances.
+            </p>
+
+            <div class="meta-stat-grid">
+              <div class="meta-stat-item"><h6>Grade</h6><p>AISI 304 & 316 Marine</p></div>
+              <div class="meta-stat-item"><h6>Thickness</h6><p>0.8mm – 3.0mm</p></div>
+              <div class="meta-stat-item"><h6>Coating</h6><p>PVD Titanium Vacuum</p></div>
+              <div class="meta-stat-item"><h6>Protection</h6><p style="color: var(--color-gold);">Nano Anti-Fingerprint</p></div>
+            </div>
+
+            <table class="spec-table-grid">
+              <tbody>
+                <tr><td>Standard Sheet Sizes</td><td>1219x2438mm (4x8ft), 1219x3048mm (4x10ft), Custom CNC</td></tr>
+                <tr><td>Popular Textures</td><td>Small/Medium Water Ripple, Mirror 8K, Hairline, Cross-stamped</td></tr>
+                <tr><td>Available Colors</td><td>Champagne Gold, Rose Gold, Titanium Black, Bronze, Emerald</td></tr>
+                <tr><td>Fabrication Support</td><td>Grooving, bending, laser cutting, welding studs pre-applied</td></tr>
+              </tbody>
+            </table>
+
+            <div style="display: flex; gap: 14px; margin-top: 26px;">
+              <button type="button" class="btn btn-gold open-quote-modal" style="flex: 1;">Request Stainless Swatches →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==============================================================
+           PANEL 3: COMMERCIAL SANITARYWARE
+           ============================================================== -->
+      <div class="material-detail-panel" id="mat-panel-sanitary">
+        <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 36px; margin-bottom: 50px;">
+          <div>
+            <div style="position: relative; overflow: hidden; border-radius: 14px; box-shadow: var(--shadow-sm);">
+              <img id="matImg-sanitary" src="assets/images/prod-sanitary.jpg" alt="Commercial Sanitaryware" class="gallery-main-img">
+              <span class="project-card-tag" style="top: 18px; left: 18px;">Commercial Grade</span>
+            </div>
+          </div>
+          <div class="detail-meta-card">
+            <span class="section-tag">SANITARY & HARDWARE</span>
+            <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--color-primary); margin: 6px 0 16px;">
+              Commercial Sanitaryware & Fixtures
+            </h2>
+            <p style="color: #64748b; font-size: 0.92rem; line-height: 1.6; margin-bottom: 24px;">
+              Engineered for malls, hotels, and airports. Water-saving rimless ceramic WCs, automatic infra-red sensor mixers, and vandal-resistant concealed flush mechanisms.
+            </p>
+            <div class="meta-stat-grid">
+              <div class="meta-stat-item"><h6>Glaze</h6><p>Self-Cleaning Nano Glaze</p></div>
+              <div class="meta-stat-item"><h6>Flush System</h6><p>Tornado Dual Flush 3/4.5L</p></div>
+              <div class="meta-stat-item"><h6>Cartridge</h6><p>Sedal Ceramic (500k cycles)</p></div>
+              <div class="meta-stat-item"><h6>Certification</h6><p style="color: var(--color-gold);">SNI & WaterMark</p></div>
+            </div>
+            <button type="button" class="btn btn-gold open-quote-modal" style="width: 100%;">Inquire Sanitary Catalog →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==============================================================
+           PANEL 4: MODULAR RACKING
+           ============================================================== -->
+      <div class="material-detail-panel" id="mat-panel-racking">
+        <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 36px; margin-bottom: 50px;">
+          <div>
+            <div style="position: relative; overflow: hidden; border-radius: 14px; box-shadow: var(--shadow-sm);">
+              <img id="matImg-racking" src="assets/images/supermarket.jpg" alt="Modular Racking" class="gallery-main-img">
+              <span class="project-card-tag" style="top: 18px; left: 18px;">Commercial Retail Systems</span>
+            </div>
+          </div>
+          <div class="detail-meta-card">
+            <span class="section-tag">RETAIL FIXTURES</span>
+            <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--color-primary); margin: 6px 0 16px;">
+              Modular Commercial Display Racking
+            </h2>
+            <p style="color: #64748b; font-size: 0.92rem; line-height: 1.6; margin-bottom: 24px;">
+              Standardized modular shelving units for supermarkets, department stores, and boutique specialty retailers with quick boltless tool-free assembly.
+            </p>
+            <div class="meta-stat-grid">
+              <div class="meta-stat-item"><h6>Material</h6><p>SPCC Cold-Rolled Steel</p></div>
+              <div class="meta-stat-item"><h6>Capacity</h6><p>80kg - 150kg per shelf</p></div>
+              <div class="meta-stat-item"><h6>Finish</h6><p>AkzoNobel Powder Coat</p></div>
+              <div class="meta-stat-item"><h6>MOQ</h6><p style="color: var(--color-gold);">50 Sets / Modular Run</p></div>
+            </div>
+            <button type="button" class="btn btn-gold open-quote-modal" style="width: 100%;">Request Retail Rack Quote →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Back & CTA Bar -->
+      <div style="margin-top: 40px; padding: 24px; background: #ffffff; border-radius: 12px; border: 1px solid var(--color-border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <a href="product-library.html" class="btn btn-outline-gold">← Back to Full Product Library</a>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: center;">
+          <span style="font-size: 0.88rem; color: #64748b;">Need physical material samples?</span>
+          <button type="button" class="btn btn-gold open-quote-modal">Request Sample Box →</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    function switchMatImage(panelKey, src, thumbEl) {
+      const mainImg = document.getElementById('matImg-' + panelKey);
+      if (mainImg) mainImg.src = src;
+      const parent = thumbEl.parentElement;
+      parent.querySelectorAll('.gallery-thumb-item').forEach(t => t.classList.remove('active'));
+      thumbEl.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const requestedId = urlParams.get('id') || 'porcelain';
+
+      const tabBtns = document.querySelectorAll('.material-tab-btn');
+      const panels = document.querySelectorAll('.material-detail-panel');
+      const breadcrumb = document.getElementById('breadcrumbMaterialCurrent');
+
+      function showMaterial(id) {
+        tabBtns.forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.target === id);
+        });
+        panels.forEach(p => {
+          p.classList.toggle('active', p.id === 'mat-panel-' + id);
+        });
+
+        if (breadcrumb) {
+          const activeBtn = document.querySelector(`.material-tab-btn[data-target="${id}"]`);
+          if (activeBtn) breadcrumb.textContent = activeBtn.querySelector('span:first-child').textContent;
+        }
+      }
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const target = btn.dataset.target;
+          showMaterial(target);
+          history.replaceState(null, '', '?id=' + target);
+        });
+      });
+
+      // Initial show from URL param
+      showMaterial(requestedId);
+    });
+  </script>
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-info">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="Vision Focus Trade Line" class="footer-logo-img">
+          </a>
+          <p class="footer-brand-text">
+            Founded in 2016 by Mr. Jason Shi, Vision Focus acts as a trusted bridge between Indonesian clients and reliable factories in China.
+          </p>
+          <div style="font-size: 0.8rem; color: #94a3b8;">
+            Offices in Surabaya, Jakarta, and Foshan (China).
+          </div>
+        </div>
+
+        <!-- Col 1: Solutions -->
+        <div class="footer-nav-col">
+          <h5>Solutions</h5>
+          <ul class="footer-links-list">
+            <li><a href="solutions.html#supermarket">Supermarket & Retail Chains</a></li>
+            <li><a href="solutions.html#manufacturing">Manufacturing Materials</a></li>
+            <li><a href="solutions.html#developer">Developer Procurement</a></li>
+            <li><a href="solutions.html#architects">Architects & Designers</a></li>
+            <li><a href="solutions.html">Direct Sourcing China</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Project Ref -->
+        <div class="footer-nav-col">
+          <h5>Project Ref</h5>
+          <ul class="footer-links-list">
+            <li><a href="projects.html#commercial">Commercial Buildings</a></li>
+            <li><a href="projects.html#residential">Residential Towers</a></li>
+            <li><a href="projects.html#hospitality">Hospitality & Hotels</a></li>
+            <li><a href="projects.html#retail">Retail Centers</a></li>
+            <li><a href="projects.html">Infrastructure</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Company -->
+        <div class="footer-nav-col">
+          <h5>About Us</h5>
+          <ul class="footer-links-list">
+            <li><a href="about.html#ceo">Founder & CEO Mr. Jason Shi</a></li>
+            <li><a href="about.html#bridge">Our China-Indonesia Bridge</a></li>
+            <li><a href="how-we-work.html">How We Work (5 Steps)</a></li>
+            <li><a href="events.html">IndoBuildTech & GZDW</a></li>
+            <li><a href="product-library.html">Material Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Insights & Legal -->
+        <div class="footer-nav-col">
+          <h5>Insights & Contact</h5>
+          <ul class="footer-links-list">
+            <li><a href="insights.html#china-supply">China Supply Chain 2026</a></li>
+            <li><a href="insights.html#how-to-source">Sourcing Guide</a></li>
+            <li><a href="insights.html#customs">Customs & Regulations</a></li>
+            <li><a href="contact.html">Contact Offices</a></li>
+            <li><a href="#" class="open-quote-modal">Get a Quotation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>
+          &copy; 2016 - 2026 Vision Focus Trade Line. All Rights Reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="contact.html">Surabaya • Jakarta • Foshan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       FLOATING AUTO-TRANSLATE WIDGET (LEFT SIDE)
+       ========================================== -->
+  <div class="floating-lang-wrapper" id="floatingLangWrapper" aria-label="Google Translate">
+    <div class="google-translate-box">
+      <span class="lang-globe-icon" title="Google Translate">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      </span>
+      <div id="google_translate_element"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FLOATING WHATSAPP POPUP WIDGET (IMAGE 4)
+       ========================================== -->
+  <div class="floating-wa-wrapper" aria-label="WhatsApp Inquiry Widget">
+    <div class="wa-popup-card" id="waPopupCard">
+      <div class="wa-popup-header">
+        <div class="wa-popup-header-info">
+          <div class="wa-avatar">
+            <img src="assets/images/logo.png" alt="Vision Focus Icon">
+          </div>
+          <div>
+            <h4 class="wa-popup-title">Vision Focus Support</h4>
+            <span class="wa-popup-status">Typically replies in 10 minutes</span>
+          </div>
+        </div>
+        <button type="button" id="waCloseBtn" style="color: #ffffff; font-size: 1.25rem;">&times;</button>
+      </div>
+
+      <div class="wa-popup-body">
+        <div class="wa-chat-bubble">
+          Halo! Ada yang bisa kami bantu mengenai kebutuhan sourcing & procurement dari China? Silakan pilih divisi:
+        </div>
+
+        <div class="wa-department-choices">
+          <button type="button" class="wa-choice-btn" data-dept="Supermarket & Retail Sourcing">
+            <span>🛒 Supermarket & Retail Fitout</span>
+            <span>›</span>
+          </button>
+          <button type="button" class="wa-choice-btn" data-dept="Developer & Real Estate Project">
+            <span>🏢 Project Procurement & Developer</span>
+            <span>›</span>
+          </button>
+          <button type="button" class="wa-choice-btn" data-dept="Granite, Stainless Steel & Material Samples">
+            <span>💎 Building Materials & Samples</span>
+            <span>›</span>
+          </button>
+          <button type="button" class="wa-choice-btn" data-dept="General Consultation with Mr. Jason Shi Team">
+            <span>🤝 General Business Discussion</span>
+            <span>›</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trigger Button -->
+    <button type="button" class="wa-trigger-btn" id="waTriggerBtn" aria-label="Open WhatsApp Help Chat">
+      <div class="wa-pulse-ring"></div>
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.204 8.204 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.21 8.21 0 0 1-1.26-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.08s.89 2.41 1.01 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- ==========================================
+       MODAL 1: GET A QUOTE
+       ========================================== -->
+  <div class="modal-backdrop" id="quoteModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3>Request Project Quotation</h3>
+        <button type="button" class="modal-close-btn" id="closeQuoteBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="quoteForm">
+          <div class="quote-form-grid">
+            <div>
+              <label class="form-label">Full Name *</label>
+              <input type="text" id="quoteName" class="form-input" placeholder="Your full name" required>
+            </div>
+            <div>
+              <label class="form-label">Company Name *</label>
+              <input type="text" class="form-input" placeholder="Organization / Developer" required>
+            </div>
+            <div>
+              <label class="form-label">Email Address *</label>
+              <input type="email" id="quoteEmail" class="form-input" placeholder="business@company.com" required>
+            </div>
+            <div>
+              <label class="form-label">Phone / WhatsApp *</label>
+              <input type="tel" class="form-input" placeholder="+62 8..." required>
+            </div>
+            <div class="form-group-full">
+              <label class="form-label">Procurement Category</label>
+              <select id="quoteType" class="form-select">
+                <option value="Supermarket Equipment">Supermarket & Retail Chains Sourcing</option>
+                <option value="Manufacturing Materials">Manufacturing Raw Materials & Machinery</option>
+                <option value="Developer Project">Developer & Real Estate Procurement</option>
+                <option value="Architectural Finishes">Architects & Interior Designers (Tiles, Stainless, Stone)</option>
+                <option value="General Sourcing">Other China-Indonesia Sourcing</option>
+              </select>
+            </div>
+            <div class="form-group-full">
+              <label class="form-label">Delivery Destination</label>
+              <select class="form-select">
+                <option value="Surabaya">Surabaya / Tanjung Perak Port</option>
+                <option value="Jakarta">Jakarta / Tanjung Priok Port</option>
+                <option value="Semarang">Semarang / Tanjung Emas Port</option>
+                <option value="Medan">Medan / Belawan Port</option>
+                <option value="Other">Other Port / Direct to Site</option>
+              </select>
+            </div>
+            <div class="form-group-full">
+              <label class="form-label">Requirements / Bill of Quantities (BOQ)</label>
+              <textarea class="form-textarea" rows="4" placeholder="Detail specifications, approximate container volume, target lead times, or any specific factory requirements..."></textarea>
+            </div>
+            <div class="form-group-full">
+              <button type="submit" class="btn btn-gold" style="width: 100%; padding: 14px;">
+                SUBMIT QUOTE INQUIRY →
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL 2: QUICK SEARCH
+       ========================================== -->
+  <div class="modal-backdrop" id="searchModal">
+    <div class="modal-container" style="max-width: 580px;">
+      <div class="modal-header" style="border-bottom: none; padding-bottom: 0;">
+        <h3 style="font-size: 1.15rem;">Search Vision Focus</h3>
+        <button type="button" class="modal-close-btn" id="closeSearchBtn">&times;</button>
+      </div>
+      <div class="modal-body" style="padding-top: 14px;">
+        <div style="display: flex; align-items: center; gap: 12px; background: var(--color-surface-soft); border: 1px solid var(--color-border); border-radius: 10px; padding: 12px 16px; margin-bottom: 20px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="globalSearchInput" placeholder="Search solutions, products, projects, or insights..." style="width: 100%; background: transparent; font-size: 0.95rem;">
+        </div>
+
+        <div id="searchResultsContainer" style="display: flex; flex-direction: column; gap: 8px; min-height: 180px;">
+          <p class="search-empty-text" style="color: #94a3b8; font-size: 0.85rem; text-align: center; margin-top: 40px;">
+            Type keywords to search solutions, products, projects, or insights...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .search-result-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      transition: all var(--transition-fast);
+    }
+    .search-result-row:hover {
+      background: var(--color-surface-soft);
+      border-color: var(--color-gold);
+      transform: translateX(4px);
+    }
+    .search-res-title {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+    .search-res-cat {
+      display: block;
+      font-size: 0.74rem;
+      color: var(--color-gold);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      margin-top: 2px;
+    }
+    .search-res-arrow {
+      color: var(--color-gold);
+      font-size: 1.1rem;
+    }
+  </style>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+
+  <!-- Google Translate Website Official Script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'id,en',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
+

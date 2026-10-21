@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Work | Vision Focus</title>
+  <meta name="description" content="Our 5-stage procurement framework guarantees transparency, quality, and on-time delivery from China to Indonesia.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- ==========================================
+       HEADER & NAVIGATION BAR
+       ========================================== -->
+  <header class="site-header hero-transparent-nav" role="banner">
+    <div class="container-wide">
+      <div class="nav-pill-wrapper">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo-link" aria-label="Vision Focus Home">
+          <img src="assets/logo/VISION FOCUS LOGO FIX SOFT GOLD.png" alt="Vision Focus Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Desktop Navigation Menu (Streamlined like About Us) -->
+        <nav class="desktop-nav" role="navigation" aria-label="Primary Navigation">
+          <!-- 1. HOME -->
+          <a href="index.html" class="nav-link-item" data-i18n="nav_home">HOME</a>
+
+          <!-- 2. ABOUT US -->
+          <div class="has-dropdown">
+            <a href="about.html" class="nav-link-item active" data-i18n="nav_about">
+              ABOUT US
+              <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="about.html" class="dropdown-item">
+                <span>About Vision Focus</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="why.html" class="dropdown-item">
+                <span>Why Choose Us</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="how-we-work.html" class="dropdown-item">
+                <span>How We Work</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. SERVICE -->
+          <div class="has-dropdown">
+            <a href="solutions.html" class="nav-link-item" data-i18n="nav_service">
+              SERVICE
+              <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="solutions.html#gate-indonesia" class="dropdown-item">
+                <span>The Gate to Indonesia</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="solutions.html#gate-china" class="dropdown-item">
+                <span>The Gate to China</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. PROJECT REFERENCE (Replaced Product Library) -->
+          <a href="projects.html" class="nav-link-item" data-i18n="nav_projects">PROJECT REFERENCE</a>
+
+          <!-- 5. EVENT -->
+          <div class="has-dropdown">
+            <a href="events.html" class="nav-link-item" data-i18n="nav_events">
+              EVENT
+              <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="event-ibt-2025.html" class="dropdown-item">
+                <span>IndoBuildTech 2025</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="event-gzdw.html" class="dropdown-item">
+                <span>Guangzhou Design Week (GZDW 2024)</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="event-detail.html?id=canton" class="dropdown-item">
+                <span>137th Canton Fair &amp; Summit</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+              <a href="events.html" class="dropdown-item" style="border-top: 1px solid #f1f5f9; margin-top: 4px; padding-top: 8px;">
+                <span style="font-weight: 700; color: var(--color-gold);">All Events &amp; Exhibitions</span>
+                <span class="dropdown-arrow">›</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. INSIGHTS -->
+          <a href="insights.html" class="nav-link-item" data-i18n="nav_insights">INSIGHTS</a>
+
+          <!-- 7. CONTACT -->
+          <a href="contact.html" class="nav-link-item" data-i18n="nav_contact">CONTACT</a>
+        </nav>
+
+        <!-- Nav Actions: Language Switcher & WhatsApp CTA -->
+        <div class="nav-actions">
+          <!-- Tri-lingual Switcher (Default EN) -->
+          <div class="lang-switcher-pill" aria-label="Language Selector">
+            <button type="button" class="lang-btn active" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="id">ID</button>
+            <button type="button" class="lang-btn" data-lang="zh">中文</button>
+          </div>
+
+          <a href="https://wa.me/628113188878?text=Hello%20Vision%20Focus%2C%20I%20would%20like%20to%20inquire%20about%20sourcing%20services" target="_blank" rel="noopener noreferrer" class="btn-clear-wa" style="padding: 9px 18px; font-size: 0.8rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.204 8.204 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.21 8.21 0 0 1-1.26-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.08s.89 2.41 1.01 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button type="button" class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Open mobile menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <img src="assets/logo/VISION FOCUS LOGO FIX SOFT GOLD.png" alt="Vision Focus Logo" style="height: 36px;">
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="mobile-drawer-body">
+      <div style="display: flex; gap: 8px; margin-bottom: 20px; padding: 0 10px;">
+        <button type="button" class="lang-btn active" data-lang="en" style="border: 1px solid #cbd5e1; flex: 1; padding: 8px;">English</button>
+        <button type="button" class="lang-btn" data-lang="id" style="border: 1px solid #cbd5e1; flex: 1; padding: 8px;">Indonesia</button>
+        <button type="button" class="lang-btn" data-lang="zh" style="border: 1px solid #cbd5e1; flex: 1; padding: 8px;">中文</button>
+      </div>
+
+      <a href="index.html" class="mobile-nav-link" data-i18n="nav_home">Home</a>
+
+      <div>
+        <a href="about.html" class="mobile-nav-link mobile-accordion-trigger" data-i18n="nav_about">About Us <span>▾</span></a>
+        <div class="mobile-accordion-content">
+          <a href="event-ibt-2025.html">IndoBuildTech 2025</a>
+          <a href="event-gzdw.html">Guangzhou Design Week (GZDW 2024)</a>
+          <a href="event-detail.html?id=canton">137th Canton Fair &amp; Summit</a>
+          <a href="events.html">All Events &amp; Exhibitions</a>
+        </div>
+      </div>
+
+      <div>
+        <a href="solutions.html" class="mobile-nav-link mobile-accordion-trigger" data-i18n="nav_service">Service <span>▾</span></a>
+        <div class="mobile-accordion-content">
+          <a href="solutions.html#gate-indonesia">The Gate to Indonesia</a>
+          <a href="solutions.html#gate-china">The Gate to China</a>
+          </div>
+      </div>
+
+      <a href="projects.html" class="mobile-nav-link" data-i18n="nav_projects">Project Reference</a>
+
+      <div>
+        <a href="events.html" class="mobile-nav-link mobile-accordion-trigger" data-i18n="nav_events">Event <span>▾</span></a>
+        <div class="mobile-accordion-content">
+          <a href="events.html#ibt2025">IndoBuildTech 2025</a>
+          <a href="events.html">All Exhibitions & GZDW</a>
+        </div>
+      </div>
+
+      <a href="insights.html" class="mobile-nav-link" data-i18n="nav_insights">Insights</a>
+      <a href="contact.html" class="mobile-nav-link" data-i18n="nav_contact">Contact Us</a>
+      <a href="https://wa.me/628113188878?text=Hello%20Vision%20Focus%2C%20I%20would%20like%20to%20inquire%20about%20sourcing%20services" target="_blank" class="mobile-nav-link" style="color: #25d366; font-weight: 700;">Chat on WhatsApp ↗</a>
+    </div>
+  </aside>
+
+
+  <!-- ==========================================
+       SUBPAGE HERO WITH CITY BACKGROUND
+       ========================================== -->
+  <section class="page-hero-section">
+
+    <div class="container" style="position: relative; z-index: 3;">
+      <div class="page-hero-content fade-in-up" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <span class="page-hero-eyebrow">PROCESS</span>
+        <h1 class="page-hero-title">How We Work</h1>
+        <div class="page-breadcrumbs" style="justify-content: center; margin-top: 18px;">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <span>How We Work</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main style="background: #ffffff;">
+    
+  <!-- Section 1: 5 Step Stepper -->
+  <section class="how-it-works-section" style="padding: 120px 0 100px;">
+    <div class="container">
+      <div class="fade-in-up" style="text-align: center; max-width: 760px; margin: 0 auto 60px;">
+        <span class="about-eyebrow" style="margin-bottom: 8px;">01 / PROCUREMENT METHODOLOGY</span>
+        <h2 class="editorial-section-title" style="margin-bottom: 8px;">A Clear Process from Start to Success</h2>
+        <p class="editorial-section-sub" style="margin: 0 auto;">
+          Our 5-stage procurement framework guarantees transparency, uncompromised quality, and punctuality at every milestone.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 32px;">
+        <div id="step-1" class="step-process-card fade-in-up" style="background: #ffffff; border: 1px solid #eef2f6; border-radius: 14px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); padding: 36px 32px;">
+          <div class="step-process-num" style="color: #c89b53; font-weight: 700;">01</div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 600; color: #111e2e; margin-bottom: 8px;">Understand Your Needs</h3>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.7; margin: 0;">We analyze your architectural drawings, bills of quantities (BOQ), technical tolerances, target budget, and required delivery timeline to determine the most competitive manufacturing route in China.</p>
+          </div>
+          <div class="step-process-media" style="border-radius: 10px; overflow: hidden;"><img src="assets/images/step-needs.jpg" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"></div>
+        </div>
+
+        <div id="step-2" class="step-process-card fade-in-up delay-1" style="background: #ffffff; border: 1px solid #eef2f6; border-radius: 14px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); padding: 36px 32px;">
+          <div class="step-process-num" style="color: #c89b53; font-weight: 700;">02</div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 600; color: #111e2e; margin-bottom: 8px;">Source &amp; Verify Factory Capacity</h3>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.7; margin: 0;">Our team stationed on the ground in Foshan and Guangzhou performs on-site audits of certified tier-1 factories. We examine production lines, verify ISO/CE/SNI credentials, and send physical sample boxes for your client approval.</p>
+          </div>
+          <div class="step-process-media" style="border-radius: 10px; overflow: hidden;"><img src="assets/images/step-source.jpg" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"></div>
+        </div>
+
+        <div id="step-3" class="step-process-card fade-in-up delay-2" style="background: #ffffff; border: 1px solid #eef2f6; border-radius: 14px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); padding: 36px 32px;">
+          <div class="step-process-num" style="color: #c89b53; font-weight: 700;">03</div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 600; color: #111e2e; margin-bottom: 8px;">Procurement &amp; Quality Control (QC)</h3>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.7; margin: 0;">During manufacturing, our engineers conduct continuous inline checks. We perform shade variation tests, dimensional checks, stress tests, and pre-packing inspections, ensuring zero defective units enter the container.</p>
+          </div>
+          <div class="step-process-media" style="border-radius: 10px; overflow: hidden;"><img src="assets/images/step-shipping.jpg" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"></div>
+        </div>
+
+        <div id="step-4" class="step-process-card fade-in-up delay-1" style="background: #ffffff; border: 1px solid #eef2f6; border-radius: 14px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); padding: 36px 32px;">
+          <div class="step-process-num" style="color: #c89b53; font-weight: 700;">04</div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 600; color: #111e2e; margin-bottom: 8px;">Delivery &amp; Port Clearance to Indonesia</h3>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.7; margin: 0;">Full international export packing with reinforced fumigated timber crates. We coordinate sea freight, bill of lading, Indonesian customs clearance, and inland delivery direct to your job site or warehouse.</p>
+          </div>
+          <div class="step-process-media" style="border-radius: 10px; overflow: hidden;"><img src="assets/images/step-delivery.jpg" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"></div>
+        </div>
+
+        <div id="step-5" class="step-process-card fade-in-up delay-2" style="background: #ffffff; border: 1px solid #eef2f6; border-radius: 14px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); padding: 36px 32px;">
+          <div class="step-process-num" style="color: #c89b53; font-weight: 700;">05</div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 600; color: #111e2e; margin-bottom: 8px;">After-Sales &amp; Continuous Replenishment</h3>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.7; margin: 0;">We supervise container de-stuffing, provide installation technical advisory, manage defect warranty replacements, and establish continuous repeat supply channels for multi-phase projects.</p>
+          </div>
+          <div class="step-process-media" style="border-radius: 10px; overflow: hidden;"><img src="assets/images/step-support.jpg" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: THE FOSHAN QC CHECKLIST PROTOCOL -->
+  <section style="padding: 120px 0 100px; background: #fafbfc; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9;">
+    <div class="container">
+      <div class="fade-in-up" style="text-align: center; max-width: 720px; margin: 0 auto 56px;">
+        <span class="about-eyebrow" style="margin-bottom: 8px;">02 / QUALITY CONTROL</span>
+        <h2 class="editorial-section-title" style="margin-bottom: 8px;">The 8-Point Pre-Shipment Inspection</h2>
+        <p class="editorial-section-sub" style="margin: 0 auto;">Before any container door is sealed in China, our QA engineers execute mandatory testing protocols.</p>
+      </div>
+
+      <div class="resp-grid-4 fade-in-up delay-1">
+        <div class="service-clean-card" style="padding: 28px 22px;">
+          <div style="font-size: 0.72rem; letter-spacing: 0.14em; font-weight: 700; color: #c89b53; margin-bottom: 8px;">01. DIMENSIONAL</div>
+          <h4 style="font-size: 1rem; font-weight: 600; color: #111e2e; margin-bottom: 8px;">Caliper Precision</h4>
+          <p style="font-size: 0.82rem; color: #64748b; line-height: 1.6; margin: 0;">Laser micrometer measurement of diagonal, thickness, and edge straightness to within &plusmn;0.2mm tolerance.</p>
+        </div>
+        <div class="service-clean-card" style="padding: 28px 22px;">
+          <div style="font-size: 0.72rem; letter-spacing: 0.14em; font-weight: 700; color: #c89b53; margin-bottom: 8px;">02. COLOR TONE</div>
+          <h4 style="font-size: 1rem; font-weight: 600; color: #111e2e; margin-bottom: 8px;">Shade Matching</h4>
+          <p style="font-size: 0.82rem; color: #64748b; line-height: 1.6; margin: 0;">Spectrophotometer analysis and dry-lay inspection under standard D65 daylight simulator booths.</p>
+        </div>
+        <div class="service-clean-card" style="padding: 28px 22px;">
+          <div style="font-size: 0.72rem; letter-spacing: 0.14em; font-weight: 700; color: #c89b53; margin-bottom: 8px;">03. POROSITY</div>
+          <h4 style="font-size: 1rem; font-weight: 600; color: #111e2e; margin-bottom: 8px;">Water Absorption</h4>
+          <p style="font-size: 0.82rem; color: #64748b; line-height: 1.6; margin: 0;">Vacuum boiling test confirming porcelain water absorption remains strictly under 0.1% for frost and mold proofing.</p>
+        </div>
+        <div class="service-clean-card" style="padding: 28px 22px;">
+          <div style="font-size: 0.72rem; letter-spacing: 0.14em; font-weight: 700; color: #c89b53; margin-bottom: 8px;">04. SURFACE</div>
+          <h4 style="font-size: 1rem; font-weight: 600; color: #111e2e; margin-bottom: 8px;">Hardness &amp; Stain</h4>
+          <p style="font-size: 0.82rem; color: #64748b; line-height: 1.6; margin: 0;">Mohs hardness scratch testing and 24-hour methylene blue stain resistance evaluation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: REAL-TIME CLIENT INSPECTION DASHBOARD -->
+  <section style="padding: 120px 0 100px; background: #ffffff;">
+    <div class="container">
+      <div class="resp-grid-2 fade-in-up" style="gap: 56px; align-items: center;">
+        <div>
+          <span class="about-eyebrow" style="margin-bottom: 8px;">03 / FULL TRANSPARENCY</span>
+          <h2 class="editorial-section-title" style="margin-bottom: 16px;">Live Production Photo &amp; Video Reporting</h2>
+          <p style="color: #64748b; line-height: 1.7; font-size: 0.92rem; margin-bottom: 24px;">
+            Never wonder what is happening to your order in China. We assign a dedicated bilingual project coordinator who streams high-definition video inspections, sends batch photo logs, and provides container loading count verification directly via WhatsApp.
+          </p>
+          <div style="background: #fafbfc; border-radius: 12px; padding: 22px; border: 1px solid #eef2f6; display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+              <span style="color: #475569;">Inspection Report Format:</span>
+              <span style="color: #c89b53; font-weight: 600;">PDF Certificate + High-Res Photos</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; border-top: 1px solid #f1f5f9; padding-top: 10px;">
+              <span style="color: #475569;">Container Sealing Verification:</span>
+              <span style="color: #c89b53; font-weight: 600;">Customs Bolt Seal Serial Log</span>
+            </div>
+          </div>
+        </div>
+        <div style="height: 340px; border-radius: 14px; overflow: hidden; box-shadow: 0 12px 32px rgba(17,30,46,0.06);">
+          <img src="assets/images/step-shipping.jpg" alt="Live QC Inspection" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: RISK MITIGATION & ESCROW SAFEGUARDS -->
+  <section style="padding: 120px 0 100px; background: #fafbfc; border-top: 1px solid #f1f5f9;">
+    <div class="container">
+      <div class="fade-in-up" style="text-align: center; max-width: 700px; margin: 0 auto 56px;">
+        <span class="about-eyebrow" style="margin-bottom: 8px;">04 / CAPITAL PROTECTION</span>
+        <h2 class="editorial-section-title" style="margin-bottom: 8px;">Risk Mitigation &amp; Escrow Protection</h2>
+        <p class="editorial-section-sub" style="margin: 0 auto;">Protecting your capital against supply chain fraud, factory insolvency, and material non-conformity.</p>
+      </div>
+
+      <div class="resp-grid-3 fade-in-up delay-1">
+        <div class="service-clean-card" style="padding: 34px 28px;">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: #111e2e; margin-bottom: 10px;">Indonesian Legal Contracts</h4>
+          <p style="font-size: 0.86rem; color: #64748b; line-height: 1.6; margin: 0;">Contracts governed under Indonesian commercial law through our registered corporate entity in Surabaya &amp; Jakarta.</p>
+        </div>
+        <div class="service-clean-card" style="padding: 34px 28px;">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: #111e2e; margin-bottom: 10px;">Factory Escrow Holdback</h4>
+          <p style="font-size: 0.86rem; color: #64748b; line-height: 1.6; margin: 0;">Chinese manufacturers only receive final settlement after our engineering team clears container stuffing inspections.</p>
+        </div>
+        <div class="service-clean-card" style="padding: 34px 28px;">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: #111e2e; margin-bottom: 10px;">Transit Cargo Insurance</h4>
+          <p style="font-size: 0.86rem; color: #64748b; line-height: 1.6; margin: 0;">Full Institute Cargo Clauses (A) all-risk maritime insurance covering 110% of total invoice value from warehouse to site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="clear-footer" role="contentinfo">
+    <div class="container">
+      <div class="clear-footer-grid">
+        <!-- 1. Brand & Info -->
+        <div>
+          <img src="assets/logo/VISION FOCUS LOGO FIX SOFT GOLD.png" alt="Vision Focus Logo" style="height: 38px; margin-bottom: 12px;">
+          <div style="font-weight: 700; color: #ffffff; font-size: 0.95rem; margin-bottom: 16px;" data-i18n="footer_company">
+            PT VISI FOKUS SINDOTAMA PERKASA
+          </div>
+          <img src="assets/logo/LOGO GDW white.png" alt="Guangzhou Design Week Strategic Partner" style="max-height: 48px; opacity: 0.9;">
+        </div>
+
+        <!-- 2. China Partner Office -->
+        <div>
+          <div class="footer-col-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c89b53" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="footer_china">China Partner</span>
+          </div>
+          <div class="footer-addr-text">
+            Room 707, Building 2, Xingfa Building,<br>
+            Jihua Western Road, Chancheng District,<br>
+            Foshan Guangdong, China
+          </div>
+        </div>
+
+        <!-- 3. Surabaya Office -->
+        <div>
+          <div class="footer-col-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c89b53" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="footer_surabaya">Surabaya Office</span>
+          </div>
+          <div class="footer-addr-text">
+            Pakuwon Tower Tunjungan Plaza 6, Lt. 23,<br>
+            Unit 02-03, Superblock, Tunjungan City,<br>
+            Surabaya
+          </div>
+        </div>
+
+        <!-- 4. Jakarta Office -->
+        <div>
+          <div class="footer-col-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c89b53" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="footer_jakarta">Jakarta Office</span>
+          </div>
+          <div class="footer-addr-text">
+            Bizloft U. 1919, U Residence<br>
+            Boulevard Diponegoro, Lippo Karawaci<br>
+            Tangerang
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Row: Contacts & Copyright -->
+      <div class="clear-footer-bottom">
+        <div class="footer-contact-links">
+          <a href="mailto:cs@visifokus.com" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c89b53" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>cs@visifokus.com</span>
+          </a>
+          <a href="https://instagram.com/jason.shiweifei" target="_blank" rel="noopener noreferrer" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c89b53" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span>@jason.shiweifei</span>
+          </a>
+          <a href="https://wa.me/628113188878" target="_blank" rel="noopener noreferrer" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" color="#25d366"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.204 8.204 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.21 8.21 0 0 1-1.26-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.08s.89 2.41 1.01 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg>
+            <span>+62 811-3188-878</span>
+          </a>
+        </div>
+        <div>
+          &copy; 2016 - 2026 PT VISI FOKUS SINDOTAMA PERKASA. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       FLOATING WHATSAPP BUTTON (DIRECT LINK)
+       ========================================== -->
+  <a href="https://wa.me/628113188878?text=Hello%20Vision%20Focus%2C%20I%20would%20like%20to%20inquire%20about%20sourcing%20services" target="_blank" rel="noopener noreferrer" class="whatsapp-float" style="position: fixed; bottom: 25px; right: 25px; z-index: 999; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(37,211,102,0.4); transition: transform 0.3s ease;" aria-label="Chat on WhatsApp">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="#ffffff"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.204 8.204 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.21 8.21 0 0 1-1.26-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.08s.89 2.41 1.01 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg>
+  </a>
+
+  <!-- ==========================================
+       IMAGE LIGHTBOX MODAL (FOR EVENT PHOTOS)
+       ========================================== -->
+  <div class="image-lightbox" id="imageLightboxModal">
+    <div class="lightbox-content-wrap">
+      <button type="button" class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close image">&times;</button>
+      <img src="" alt="Enlarged Event Photo" class="lightbox-img" id="lightboxActiveImg">
+      <div class="lightbox-caption-text" id="lightboxCaptionText"></div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
